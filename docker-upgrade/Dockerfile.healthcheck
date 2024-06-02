@@ -1,0 +1,6 @@
+FROM rancher/healthcheck:v0.3.8
+
+ENV DOCKER_URL=https://download.docker.com/linux/static/stable/x86_64/docker-25.0.5.tgz
+
+RUN rm -f /usr/bin/docker && apt-get update && apt-get install wget -y
+RUN wget -O - ${DOCKER_URL} | tar -xzvf - --strip-components=1 -C /usr/bin && chmod +x /usr/bin/docker

@@ -4,7 +4,7 @@ services:
     labels:
       io.rancher.container.create_agent: 'true'
       io.rancher.scheduler.global: 'true'
-    image: rancher/healthcheck:1.4.8
+    image: vyushmanov/rancher-healthcheck:v0.4
     command: healthcheck --metadata-address 169.254.169.250
     logging:
       driver: json-file

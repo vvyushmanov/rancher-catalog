@@ -1,6 +1,6 @@
 .catalog:
   name: "Healthcheck Service"
-  version: "1.4.8"
+  version: "v0.4"
   description: "Rancher healthcheck service"
   minimum_rancher_version: v1.6.19-rc1
 healthcheck:
